@@ -1,0 +1,74 @@
+:root {
+  --bg: #0d0f14;
+  --panel: #13161d;
+  --panel-raised: #1a1e27;
+  --panel-hover: #212633;
+  --border: #252a36;
+  --text: #a3abbd;
+  --text-h: #eef1f7;
+  --muted: #5d6578;
+  --accent: #7c9cff;
+  --accent-bg: rgba(124, 156, 255, 0.14);
+  --land: #24324f;
+  --visited: #2f6f5e;
+  --active: #f5b14c;
+  --active-bg: rgba(245, 177, 76, 0.16);
+  --read: #4cc9f0;
+  --read-bg: rgba(76, 201, 240, 0.16);
+  --write: #5fd3a8;
+  --write-bg: rgba(95, 211, 168, 0.2);
+  --error: #ff6b6b;
+  --error-bg: rgba(255, 107, 107, 0.14);
+  --easy: #5fd3a8;
+  --medium: #f5b14c;
+  --hard: #ff6b6b;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  font: 14px/1.5 var(--sans);
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  height: 100svh;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+}
+
+button {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

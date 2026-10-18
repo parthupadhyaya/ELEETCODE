@@ -1,0 +1,12 @@
+# Render Blueprint: one web service built from the Dockerfile.
+# Deploy: Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: eleetcode
+    runtime: docker
+    plan: free # "starter" keeps it awake; free sleeps after 15 idle minutes
+    healthCheckPath: /api/health
+    envVars:
+      # Render asks for the value when the Blueprint is created
+      - key: GEMINI_API_KEY
+        sync: false

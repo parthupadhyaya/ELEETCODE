@@ -1,0 +1,14 @@
+# Secrets: the Gemini key lives in backend/.env and must never be committed
+.env
+.env.*
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+backend/.cache/
+
+# Node
+node_modules/
+dist/
